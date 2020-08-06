@@ -1,0 +1,18 @@
+{
+    "version": "0",
+    "id": "1",
+    "detail-type": "CodePipeline Pipeline Execution State Change",
+    "source": "aws.codepipeline",
+    "account":"123456789012",
+    "time":"2020-01-01T00:00:00Z",
+    "region": "us-east-1",
+    "resources": [
+        "arn:aws:codepipeline:us-east-1:123456789012:hoge-pipe"
+    ],
+    "detail": {
+        "pipeline": "hoge-pipe",
+        "version": "1",
+        "state": "STARTED",
+        "execution-id": "1"
+    }
+}
