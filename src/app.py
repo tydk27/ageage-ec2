@@ -23,7 +23,7 @@ def lambda_handler(event, context):
     for instance in response['InstanceStatuses']:
         state_code = instance['InstanceState']['Code']
         # ToDo: stopping(64)の場合はsleepする？
-        if state_code != 80:  # not running
+        if state_code != 80:  # 80: stopped
             continue
 
         target.append(instance['InstanceId'])
